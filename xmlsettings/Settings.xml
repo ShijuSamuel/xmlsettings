@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<settings>
+  <table label="First Connection">
+    <sourceconnection>Data Source=localhost;Integrated Security=true;Initial Catalog=PSConfig;</sourceconnection>
+    <destinationconnection>Data Source=localhost;Integrated Security=true;Initial Catalog=PSConfig;</destinationconnection>
+    <query>
+      <![CDATA[
+              select name,id from sys.databases
+      ]]>
+    </query>
+    <destinationtable></destinationtable>
+    <preexcecute></preexcecute>
+    <postexcecute></postexcecute>
+  </table>
+  <table label="Second Connection">
+    <sourceconnection>Data Source=localhost;Integrated Security=true;Initial Catalog=PSConfig;</sourceconnection>
+    <destinationconnection>Data Source=localhost;Integrated Security=true;Initial Catalog=PSConfig;</destinationconnection>
+    <query>
+      <![CDATA[
+          select name,id from sys.databases
+      ]]>
+    </query>
+    <destinationtable></destinationtable>
+    <preexcecute></preexcecute>
+    <postexcecute></postexcecute>
+  </table>
+</settings>
